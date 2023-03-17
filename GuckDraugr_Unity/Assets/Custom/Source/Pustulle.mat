@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pustulle
-  m_Shader: {fileID: 4800000, guid: fb6d1f38f6068b040b52e3bbe8beaa23, type: 3}
+  m_Shader: {fileID: 4800000, guid: 073287233112af2438a3ee1761caad81, type: 3}
   m_ShaderKeywords: _ADDRAIN_ON _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
@@ -40,11 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlowBumpMap:
-        m_Texture: {fileID: 2800000, guid: de2ecfb2ea787f6418cf9cdf445c4968, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FlowTexture:
-        m_Texture: {fileID: 2800000, guid: 03159a99f8d08bd4c85d6435e344c89b, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -79,12 +79,12 @@ Material:
     - _DetailNormalMapScale: 1
     - _DiffuseMovement: 0
     - _DstBlend: 0
-    - _FlowBumpScale: 1
-    - _FlowGlossiness: 0.5
+    - _FlowBumpScale: 0.8
+    - _FlowGlossiness: 0.323
     - _FlowMaskAlpha: 1
-    - _FlowSpeedY: 1
+    - _FlowSpeedY: 5
     - _GlossMapScale: 1
-    - _Glossiness: 0.12
+    - _Glossiness: 0.217
     - _GlossyReflections: 1
     - _Hue: 0
     - _MetalGloss: 0
@@ -92,9 +92,9 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RippleDistance: 0
+    - _RippleDistance: 0.04
     - _RippleFreq: 1
-    - _RippleSpeed: 1
+    - _RippleSpeed: 25
     - _Saturation: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -108,9 +108,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FlowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 255}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 0}
+    - _FlowColor: {r: 146, g: 181, b: 82, a: 255}
     - _MetalColor: {r: 1, g: 1, b: 1, a: 1}
-    - _SSS: {r: 0, g: 0, b: 0, a: 1}
+    - _SSS: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

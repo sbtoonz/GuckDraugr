@@ -2317,7 +2317,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a17d0785d4f1cae4dbefd56627875899, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2374,7 +2373,6 @@ GameObject:
   - component: {fileID: 4936182055964695}
   - component: {fileID: 114271699932607181}
   - component: {fileID: 114238183836610136}
-  - component: {fileID: 6030648254385456392}
   m_Layer: 0
   m_Name: fx_crit
   m_TagString: Untagged
@@ -2429,22 +2427,6 @@ MonoBehaviour:
   m_distant: 0
   m_type: 0
   m_syncInitialScale: 0
---- !u!114 &6030648254385456392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1408688866431860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 199517571812233817}
-  - {fileID: 199829753736125402}
-  _shaderType: 15
 --- !u!1 &1774108053887568
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,7 +4556,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31266ffb4db0dc545b90e250dc34f832, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4608,13 +4589,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}

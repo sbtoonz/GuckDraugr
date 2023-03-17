@@ -126,7 +126,7 @@ MonoBehaviour:
   m_walkSpeed: 2.5
   m_speed: 1
   m_turnSpeed: 250
-  m_runSpeed: 6.5
+  m_runSpeed: 7.25
   m_runTurnSpeed: 350
   m_flySlowSpeed: 5
   m_flyFastSpeed: 12
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_jumpForceTiredFactor: 0.7
   m_airControl: 0.1
   m_canSwim: 1
-  m_swimDepth: 1.09
+  m_swimDepth: 1.04
   m_swimSpeed: 1
   m_swimTurnSpeed: 100
   m_swimAcceleration: 0.05
@@ -249,7 +249,9 @@ MonoBehaviour:
   m_staggerDamageFactor: 0.5
   m_equipStaminaDrain: 10
   m_blockStaminaDrain: 25
-  m_defaultItems: []
+  m_defaultItems:
+  - {fileID: 5547264125540002327, guid: da8f18000e2206c45ad545a34c54655f, type: 3}
+  - {fileID: 8344290020762168838, guid: 312b2ac9cc0a4154198bf9b0306445bc, type: 3}
   m_randomWeapon: []
   m_randomArmor: []
   m_randomShield: []
@@ -332,8 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 829610738, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_viewRange: 30
-  m_viewAngle: 90
+  m_viewRange: 50
+  m_viewAngle: 80
   m_hearRange: 9999
   m_mistVision: 1
   m_alertedEffects:
@@ -386,23 +388,23 @@ MonoBehaviour:
   m_spawnMessage: 
   m_deathMessage: 
   m_alertedMessage: 
-  m_alertRange: 25
+  m_alertRange: 9999
   m_fleeIfHurtWhenTargetCantBeReached: 0
   m_fleeIfNotAlerted: 0
   m_fleeIfLowHealth: 0
-  m_circulateWhileCharging: 1
+  m_circulateWhileCharging: 0
   m_circulateWhileChargingFlying: 0
   m_enableHuntPlayer: 1
   m_attackPlayerObjects: 1
   m_privateAreaTriggerTreshold: 4
-  m_interceptTimeMax: 3
-  m_interceptTimeMin: 1
+  m_interceptTimeMax: 0
+  m_interceptTimeMin: 0
   m_maxChaseDistance: 10
-  m_minAttackInterval: 0.15
-  m_circleTargetInterval: 0.15
+  m_minAttackInterval: 0
+  m_circleTargetInterval: 0
   m_circleTargetDuration: 2
   m_circleTargetDistance: 2
-  m_sleeping: 0
+  m_sleeping: 1
   m_wakeupRange: 15
   m_noiseWakeup: 0
   m_maxNoiseWakeupRange: 50
@@ -467,12 +469,12 @@ MonoBehaviour:
     m_effectPrefabs:
     - {fileID: 1717450991750169, guid: e04089eea75cc3c4ba6b66d46c2d49ec, type: 3}
   - m_name: shallow water
-    m_motionType: 7
+    m_motionType: 16
     m_material: 2
     m_effectPrefabs:
     - {fileID: 1221034297237217, guid: 7788c198cde3da4439944adb5c0c6c0f, type: 3}
   - m_name: snow walk
-    m_motionType: 5
+    m_motionType: 64
     m_material: 16
     m_effectPrefabs:
     - {fileID: 1233787626633427, guid: 5596b730990081e4ca049530438c8f17, type: 3}
@@ -525,8 +527,8 @@ LODGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398450881902758}
   serializedVersion: 2
-  m_LocalReferencePoint: {x: 0.02606666, y: 1.0694841, z: 0.04610622}
-  m_Size: 2.2312195
+  m_LocalReferencePoint: {x: -0.33069086, y: 1.1428204, z: -0.015669823}
+  m_Size: 10.55155
   m_FadeMode: 1
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
@@ -534,14 +536,9 @@ LODGroup:
   - screenRelativeHeight: 0.10132051
     fadeTransitionWidth: 0
     renderers:
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
-    - renderer: {fileID: 0}
+    - renderer: {fileID: 8967104258650227994}
+    - renderer: {fileID: 5559881445993430723}
+    - renderer: {fileID: 8740648084490980998}
   m_Enabled: 1
 --- !u!114 &114356835794487728
 MonoBehaviour:
@@ -691,7 +688,6 @@ GameObject:
   - component: {fileID: 6638637030279011365}
   - component: {fileID: 9149503721526623256}
   - component: {fileID: 5559881445993430723}
-  - component: {fileID: 539175819958640838}
   m_Layer: 20
   m_Name: Particle System
   m_TagString: Untagged
@@ -2995,21 +2991,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &539175819958640838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155465685469720743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 5559881445993430723}
-  _shaderType: 15
 --- !u!1 &528037218060606004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3620,6 +3601,99 @@ Transform:
   m_Father: {fileID: 7912068606084145187}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -8.815223, y: 18.506012, z: 54.556366}
+--- !u!1 &3992333924512364587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 514264850190873674}
+  - component: {fileID: 4777334183456036184}
+  m_Layer: 0
+  m_Name: PointLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &514264850190873674
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992333924512364587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.291, z: -0.799}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3297968118578860319}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &4777334183456036184
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3992333924512364587}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 0.57254905, g: 0.70980394, b: 0.32156864, a: 1}
+  m_Intensity: 2
+  m_Range: 2.08
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &4329764667340212228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4481,6 +4555,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6638637030279011365}
+  - {fileID: 514264850190873674}
   m_Father: {fileID: 4632261223510551638}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50.847, y: 0, z: 0}
@@ -4551,7 +4626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderers:
   - {fileID: 8967104258650227994}
-  _shaderType: 2
+  _shaderType: 4
 --- !u!1 &7446454137552487761
 GameObject:
   m_ObjectHideFlags: 0

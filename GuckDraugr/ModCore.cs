@@ -4,6 +4,7 @@ using BepInEx.Configuration;
 using CreatureManager;
 using HarmonyLib;
 using ServerSync;
+using UnityEngine;
 
 namespace GuckDraugr
 {
@@ -14,6 +15,13 @@ namespace GuckDraugr
         private const string ModVersion = "1.0";
         private const string ModGUID = "com.zarboz.GuckDraugrMod";
         private static Harmony harmony = null!;
+
+        private AssetBundle? _asset = null;
+        public static GameObject? aoe_attack= null;
+        public static GameObject? aoe_object= null;
+        public static GameObject? vomit_attack= null;
+        public static GameObject? vomit_object= null;
+        
         ConfigSync configSync = new(ModGUID) 
             { DisplayName = ModName, CurrentVersion = ModVersion, MinimumRequiredVersion = ModVersion};
         internal static ConfigEntry<bool> ServerConfigLocked = null!;
@@ -34,7 +42,15 @@ namespace GuckDraugr
             harmony.PatchAll(assembly);
             ServerConfigLocked = config("1 - General", "Lock Configuration", true, "If on, the configuration is locked and can be changed by server admins only.");
             configSync.AddLockingConfigEntry(ServerConfigLocked);
-
+            Game.isModded = true;
+            _asset = Utilities.LoadAssetBundle("guckdraugr");
+            
+            aoe_attack = _asset!.LoadAsset<GameObject>("GuckDraugr_Explode_attack");
+            aoe_object = _asset.LoadAsset<GameObject>("GuckDraugr_AOE");
+            vomit_attack = _asset.LoadAsset<GameObject>("GuckDraugr_Vomit_Attack");
+            vomit_object = _asset.LoadAsset<GameObject>("GuckDraugr_Vomit_AOE");
+            _asset.Unload(false);
+            
             Creature guckDraugr = new("guckdraugr", "GuckDraugr", "assets")
             {
                 Biome = Heightmap.Biome.Swamp,
@@ -45,8 +61,9 @@ namespace GuckDraugr
             guckDraugr.Localize().English("Guck Draugr");
             guckDraugr.Drops["Guck"].Amount = new Range(5, 10);
             guckDraugr.Drops["Guck"].DropChance = 75f;
-            
-
+            guckDraugr.AttackImmediately = true;
+            guckDraugr.CanBeTamed = false;
         }
+        
     }
 }

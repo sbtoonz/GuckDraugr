@@ -2215,7 +2215,6 @@ GameObject:
   - component: {fileID: 114772168875584419}
   - component: {fileID: 114258713570853276}
   - component: {fileID: 4194023273864983002}
-  - component: {fileID: 8921301256258090463}
   m_Layer: 0
   m_Name: vfx_draugr_hit
   m_TagString: Untagged
@@ -4369,13 +4368,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -4425,24 +4424,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderers:
   - {fileID: 199174241739962788}
-  _shaderType: 15
---- !u!114 &8921301256258090463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389659637685540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _renderers:
   - {fileID: 199989954478541185}
   - {fileID: 199140969478816510}
   - {fileID: 199469649682494466}
-  _shaderType: 17
+  _shaderType: 15
 --- !u!1 &1601870948133465
 GameObject:
   m_ObjectHideFlags: 0

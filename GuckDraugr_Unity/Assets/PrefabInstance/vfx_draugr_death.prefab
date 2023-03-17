@@ -2206,7 +2206,7 @@ GameObject:
   - component: {fileID: 114497802972677204}
   - component: {fileID: 114276242993760545}
   - component: {fileID: 7575166736311531552}
-  - component: {fileID: 4397903520805324368}
+  - component: {fileID: 6068173346525866231}
   m_Layer: 0
   m_Name: vfx_draugr_death
   m_TagString: Untagged
@@ -4360,13 +4360,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -4416,8 +4416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderers:
   - {fileID: 199716776275413994}
+  - {fileID: 199567179889930774}
   _shaderType: 15
---- !u!114 &4397903520805324368
+--- !u!114 &6068173346525866231
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4431,7 +4432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderers:
   - {fileID: 199812125913244050}
-  - {fileID: 199567179889930774}
   _shaderType: 17
 --- !u!1 &1601183628891184
 GameObject:
@@ -4615,7 +4615,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 2
       minColor: {r: 0.41176468, g: 0.28255576, b: 0.051470585, a: 1}
-      maxColor: {r: 0.21561266, g: 0.30882353, b: 0.090830445, a: 1}
+      maxColor: {r: 0.30980393, g: 0.090196066, b: 0.19282551, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}

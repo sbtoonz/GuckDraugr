@@ -43,14 +43,16 @@ enum ShaderType
 public class ShaderReplacerNew : MonoBehaviour
 {
     [Tooltip("Use this Field For Normal Renderers")] 
-    [SerializeField]
-    internal Renderer?[] _renderers;
+    [SerializeField] internal Renderer[] _renderers;
     [SerializeField] internal ShaderType _shaderType;
     private void Awake()
     {
         if (IsHeadlessMode()) return;
+        if(_renderers.Length <=0) return;
+        if(!this.gameObject.activeInHierarchy)return;
         foreach (var renderer in _renderers)
         {
+            if(renderer == null) continue;
             foreach (var material in renderer.sharedMaterials)
             {
                 material.shader = Shader.Find(ReturnEnumString(_shaderType));
