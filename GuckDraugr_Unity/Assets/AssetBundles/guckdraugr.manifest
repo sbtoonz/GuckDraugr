@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3646257138
+CRC: 4289187784
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5b1dabf0e7fbe8a0bcbe53cb06540a58
+    Hash: 1d224070894dbf8b0c36172592708f4e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 4a9f728113024d9c217f7b038c54afab
@@ -113,6 +113,7 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Custom/GuckDraugr_Explode_attack.prefab
 - Assets/Custom/GuckDraugr_AOE.prefab
+- Assets/Custom/VFX_GuckDraugr_Death.prefab
 - Assets/Custom/GuckDraugr.prefab
 - Assets/Custom/GuckDraugr_Vomit_AOE.prefab
 - Assets/Custom/GuckDraugr_Vomit_Attack.prefab

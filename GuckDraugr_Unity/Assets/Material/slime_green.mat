@@ -8,15 +8,14 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: slime_green
-  m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
+  m_Shader: {fileID: 4800000, guid: 3410b6a53ba47b14d9edfa0a5c324dbe, type: 3}
   m_ShaderKeywords: GEOM_TYPE_BRANCH GEOM_TYPE_BRANCH_DETAIL GEOM_TYPE_FROND _ALPHABLEND_ON
     _EMISSION _FADING_ON
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses:
   - ALWAYS
   m_SavedProperties:
@@ -59,7 +58,7 @@ Material:
     - _DistortionStrength: 1
     - _DistortionStrengthScaled: 0
     - _DstBlend: 10
-    - _EmissionEnabled: 1
+    - _EmissionEnabled: 0
     - _EmissionScale: 1
     - _EnableAlbedo: 0
     - _EnableEmission: 1
@@ -100,7 +99,7 @@ Material:
     m_Colors:
     - _CamFadeDistance: {r: 0, g: 150, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0.29818648, g: 0.3301887, b: 0.26012978, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _ColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
     - _EmisColor: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0.1288793, g: 0.16911763, b: 0.0833153, a: 1}

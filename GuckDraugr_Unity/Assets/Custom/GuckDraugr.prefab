@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 114132697993685635}
   - component: {fileID: 114380307324420051}
   - component: {fileID: 114965766175171611}
+  - component: {fileID: 8719736183779490965}
   m_Layer: 9
   m_Name: GuckDraugr
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176340841908660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 50, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4227970843547914}
@@ -191,7 +192,7 @@ MonoBehaviour:
       m_childTransform: 
   m_deathEffects:
     m_effectPrefabs:
-    - m_prefab: {fileID: 1344717368886508, guid: 1dfb2076422694249853bc358b54c93f, type: 3}
+    - m_prefab: {fileID: 4186619134705415688, guid: c950f80f5f2ba294f97602135ad9ffc2, type: 3}
       m_enabled: 1
       m_variant: -1
       m_attach: 0
@@ -486,6 +487,22 @@ MonoBehaviour:
   m_feet:
   - {fileID: 2962609640126978133}
   - {fileID: 3944503999359828258}
+--- !u!114 &8719736183779490965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176340841908660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderers:
+  - {fileID: 8740648084490980998}
+  - {fileID: 8967104258650227994}
+  _shaderType: 4
 --- !u!1 &1398450881902758
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155465685469720743}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.36, y: 0, z: 0.1}
+  m_LocalPosition: {x: -0.01, y: 0.423, z: -0.719}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3297968118578860319}
@@ -888,9 +905,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     startSize:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 3
-      minScalar: 1
+      minMaxState: 3
+      scalar: 0.5
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve: []
@@ -905,7 +922,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeY:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -922,7 +939,7 @@ ParticleSystem:
         m_RotationOrder: 4
     startSizeZ:
       serializedVersion: 2
-      minMaxState: 0
+      minMaxState: 3
       scalar: 1
       minScalar: 1
       maxCurve:
@@ -2979,13 +2996,13 @@ ParticleSystemRenderer:
   m_RenderAlignment: 0
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
-  m_UseCustomVertexStreams: 0
+  m_UseCustomVertexStreams: 1
   m_EnableGPUInstancing: 0
   m_ApplyActiveColorSpace: 0
   m_AllowRoll: 1
   m_FreeformStretching: 0
   m_RotateWithStretchDirection: 1
-  m_VertexStreams: 00010304
+  m_VertexStreams: 000304
   m_Mesh: {fileID: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
@@ -3126,7 +3143,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8633899970569892701}
   - component: {fileID: 8740648084490980998}
-  - component: {fileID: 7358901890894173572}
   m_Layer: 0
   m_Name: guck_draugr
   m_TagString: Untagged
@@ -3192,7 +3208,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: 6660928501126574018, guid: 6e2946f3f262a8d42a35f1842edf87db, type: 3}
+  m_Mesh: {fileID: 6660928501126574018, guid: 015e28c00d0917144b69758dccab5a8a, type: 3}
   m_Bones:
   - {fileID: 8945017051263061885}
   - {fileID: 281261383759259901}
@@ -3246,21 +3262,6 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.022258222, y: 0.23599079, z: 0.036076933}
     m_Extent: {x: 0.84603006, y: 0.46136805, z: 0.54836833}
   m_DirtyAABB: 0
---- !u!114 &7358901890894173572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662836018412210989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 8740648084490980998}
-  _shaderType: 4
 --- !u!1 &1847130215192874675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3617,7 +3618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &514264850190873674
 Transform:
   m_ObjectHideFlags: 0
@@ -3645,7 +3646,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.57254905, g: 0.70980394, b: 0.32156864, a: 1}
   m_Intensity: 2
-  m_Range: 2.08
+  m_Range: 1.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3683,7 +3684,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4535,7 +4536,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3297968118578860319}
   - component: {fileID: 8967104258650227994}
-  - component: {fileID: 3706662478844806405}
   m_Layer: 0
   m_Name: pustules
   m_TagString: Untagged
@@ -4603,7 +4603,7 @@ SkinnedMeshRenderer:
   m_Quality: 0
   m_UpdateWhenOffscreen: 0
   m_SkinnedMotionVectors: 1
-  m_Mesh: {fileID: -3923372558957916751, guid: 6e2946f3f262a8d42a35f1842edf87db, type: 3}
+  m_Mesh: {fileID: -3923372558957916751, guid: 015e28c00d0917144b69758dccab5a8a, type: 3}
   m_Bones:
   - {fileID: 3033162815716412757}
   m_BlendShapeWeights: []
@@ -4612,21 +4612,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.06833053, y: -0.07026611, z: 0.015075177}
     m_Extent: {x: 0.39674944, y: 0.4807943, z: 0.42474076}
   m_DirtyAABB: 0
---- !u!114 &3706662478844806405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7434495676873340433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 102bef3e297e4ca44beb3d592cdabc87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _renderers:
-  - {fileID: 8967104258650227994}
-  _shaderType: 4
 --- !u!1 &7446454137552487761
 GameObject:
   m_ObjectHideFlags: 0
