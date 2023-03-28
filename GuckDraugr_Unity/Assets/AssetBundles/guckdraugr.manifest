@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 4289187784
+CRC: 3205245414
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1d224070894dbf8b0c36172592708f4e
+    Hash: d9c943b1f7506941f9a5f2dbca8df6c9
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 4a9f728113024d9c217f7b038c54afab
+    Hash: 705686aeb5458cdc92f04cf52cce7b31
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -92,6 +92,8 @@ ClassTypes:
 - Class: 245
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: GuckDraugr
+  ClassName: ShaderType
 - AssemblyName: assembly_valheim
   ClassName: Attack
 - AssemblyName: assembly_valheim

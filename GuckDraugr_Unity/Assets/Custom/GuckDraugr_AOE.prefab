@@ -14609,6 +14609,7 @@ MonoBehaviour:
   - {fileID: 3438368067310751731}
   - {fileID: 3766994159321561602}
   _shaderType: 15
+  DebugOutput: 0
 --- !u!114 &6883775157477747081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14640,15 +14641,15 @@ MonoBehaviour:
   m_useAttackSettings: 1
   m_damage:
     m_damage: 0
-    m_blunt: 50
+    m_blunt: 5
     m_slash: 0
-    m_pierce: 20
+    m_pierce: 15
     m_chop: 0
     m_pickaxe: 0
     m_fire: 0
     m_frost: 0
     m_lightning: 0
-    m_poison: 30
+    m_poison: 15
     m_spirit: 0
   m_dodgeable: 1
   m_blockable: 0

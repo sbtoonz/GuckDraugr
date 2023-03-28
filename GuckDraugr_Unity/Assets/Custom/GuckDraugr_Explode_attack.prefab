@@ -115,15 +115,15 @@ MonoBehaviour:
       m_toolTier: 0
       m_damages:
         m_damage: 0
-        m_blunt: 75
+        m_blunt: 5
         m_slash: 0
-        m_pierce: 5
+        m_pierce: 15
         m_chop: 0
         m_pickaxe: 0
         m_fire: 0
         m_frost: 0
         m_lightning: 0
-        m_poison: 20
+        m_poison: 15
         m_spirit: 0
       m_damagesPerLevel:
         m_damage: 0

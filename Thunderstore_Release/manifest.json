@@ -2,9 +2,9 @@
  "name": "GuckDraugr",
   "author": "OdinPlus",
   "description": "A Draugr seems to have been infected with guck!",
-  "version_number": "1.0.3",
+  "version_number": "1.0.4",
   "website_url": "https://www.littleroom.dev/",
   "dependencies": [
-    "denikson-BepInExPack_Valheim-5.4.2100"
+    "denikson-BepInExPack_Valheim-5.4.2101"
   ]
 }

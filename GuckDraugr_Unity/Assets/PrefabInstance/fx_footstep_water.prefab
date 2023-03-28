@@ -2499,10 +2499,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _renderers:
   - {fileID: 199393953405028671}
-  - {fileID: 199585075527727524}
   - {fileID: 199614941174051490}
   - {fileID: 199285691979074135}
   _shaderType: 15
+  DebugOutput: 1
 --- !u!1 &1344338950799119
 GameObject:
   m_ObjectHideFlags: 0

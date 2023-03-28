@@ -1,0 +1,29 @@
+[config]
+schemaVersion = "0.0.1"
+
+[package]
+namespace = "OdinPlus"
+name = "GuckDraugr"
+versionNumber = "1.0.4"
+description = "Example mod description"
+websiteUrl = "https://thunderstore.io"
+containsNsfwContent = false
+[package.dependencies]
+denikson-BepInExPack_Valheim = "5.4.2101"
+
+
+[build]
+icon = "./icon.png"
+readme = "./README.md"
+outdir = "."
+
+[[build.copy]]
+source = "/plugins"
+target = "/plugins"
+
+
+[publish]
+repository = "https://thunderstore.io"
+communities = [ "valheim", ]
+categories = [ "Mods" ]
+

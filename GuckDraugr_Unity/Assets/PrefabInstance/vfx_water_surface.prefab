@@ -6873,7 +6873,7 @@ MonoBehaviour:
   m_Script: {fileID: 469224316, guid: 1e5eba4f196255a48a608a7b9d58fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_timeout: 3
+  m_timeout: 4
   m_triggerOnAwake: 0
 --- !u!114 &7183379578521222753
 MonoBehaviour:
@@ -6892,3 +6892,4 @@ MonoBehaviour:
   - {fileID: 199807117209392362}
   - {fileID: 199952318997376405}
   _shaderType: 15
+  DebugOutput: 1

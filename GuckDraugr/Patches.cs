@@ -6,8 +6,7 @@ namespace GuckDraugr
 {
     public class Patches
     {
-        
-        public static ItemDrop item { get; set; }
+        public static ItemDrop? item { get; set; }
 
         [HarmonyPatch(typeof(ObjectDB), nameof(ObjectDB.Awake))]
         public static class ObjectDbPatch
@@ -37,11 +36,14 @@ namespace GuckDraugr
                 if(!__instance.gameObject.name.StartsWith("GuckDraugr"))return;
                 if (hit.m_ranged && hit.GetTotalDamage() > 15 && hit.GetAttacker() != __instance)
                 {
-                    __instance.m_currentAttack = item.m_itemData.m_shared.m_attack;
-                    __instance.m_currentAttack.Start(__instance, __instance.m_body, __instance.m_zanim,
-                        __instance.m_animEvent, __instance.m_visEquipment, item.m_itemData, __instance.m_previousAttack,
-                        __instance.m_timeSinceLastAttack, __instance.GetAttackDrawPercentage());
-                    
+                    if (item != null)
+                    {
+                        __instance.m_currentAttack = item.m_itemData.m_shared.m_attack;
+                        __instance.m_currentAttack.Start(__instance, __instance.m_body, __instance.m_zanim,
+                            __instance.m_animEvent, __instance.m_visEquipment, item.m_itemData,
+                            __instance.m_previousAttack,
+                            __instance.m_timeSinceLastAttack, __instance.GetAttackDrawPercentage());
+                    }
                 }
             }
         }

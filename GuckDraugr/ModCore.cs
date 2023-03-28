@@ -12,7 +12,7 @@ namespace GuckDraugr
     public class GuckDraugrMod : BaseUnityPlugin
     {
         private const string ModName = "GuckDraugrMod";
-        public const string ModVersion = "1.0.3";
+        public const string ModVersion = "1.0.4";
         private const string ModGUID = "com.zarboz.GuckDraugrMod";
         private static Harmony harmony = null!;
 
@@ -39,17 +39,17 @@ namespace GuckDraugr
             Creature guckDraugr = new("guckdraugr", "GuckDraugr", "assets")
             {
                 Biome = Heightmap.Biome.Swamp,
-                GroupSize =  new Range(2,4),
+                GroupSize =  new Range(1,1),
                 RequiredWeather = Weather.None | Weather.SwampRain,
-                Maximum = 5
+                Maximum = 5,
+                CanHaveStars = true,
+                AttackImmediately = true
             };
             guckDraugr.Localize().English("Guck Draugr");
             guckDraugr.Drops["Guck"].Amount = new Range(5, 10);
             guckDraugr.Drops["Guck"].DropChance = 75f;
-            guckDraugr.AttackImmediately = true;
             guckDraugr.CanBeTamed = false;
-            
-            
+
         }
         
     }

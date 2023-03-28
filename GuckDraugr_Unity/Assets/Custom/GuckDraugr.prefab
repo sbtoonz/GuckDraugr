@@ -233,7 +233,7 @@ MonoBehaviour:
   m_tolerateFire: 1
   m_tolerateSmoke: 1
   m_tolerateTar: 0
-  m_health: 100
+  m_health: 35
   m_damageModifiers:
     m_blunt: 0
     m_slash: 0
@@ -503,6 +503,7 @@ MonoBehaviour:
   - {fileID: 8740648084490980998}
   - {fileID: 8967104258650227994}
   _shaderType: 4
+  DebugOutput: 0
 --- !u!1 &1398450881902758
 GameObject:
   m_ObjectHideFlags: 0

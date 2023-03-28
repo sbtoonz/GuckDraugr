@@ -155,11 +155,11 @@ MonoBehaviour:
         m_selfDamage: 1
         m_attackOriginJoint: 
         m_attackRange: 1.5
-        m_attackHeight: 0.6
-        m_attackOffset: 0
+        m_attackHeight: 1.5
+        m_attackOffset: 0.5
         m_spawnOnTrigger: {fileID: 0}
         m_toggleFlying: 0
-        m_attach: 1
+        m_attach: 0
         m_requiresReload: 0
         m_reloadAnimation: 
         m_reloadTime: 2
@@ -192,8 +192,8 @@ MonoBehaviour:
         m_useCharacterFacingYAim: 0
         m_launchAngle: 0
         m_projectiles: 1
-        m_projectileBursts: 3
-        m_burstInterval: 0.25
+        m_projectileBursts: 1
+        m_burstInterval: 0
         m_destroyPreviousProjectile: 0
         m_perBurstResourceUsage: 0
         m_hitEffect:

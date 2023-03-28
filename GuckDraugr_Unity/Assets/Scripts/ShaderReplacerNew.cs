@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 #nullable enable
+[Serializable]
 enum ShaderType
 {
     Alpha,
@@ -40,11 +41,13 @@ enum ShaderType
     YggdrasilRoot,
     ToonDeferredShading2017
 }
+
 public class ShaderReplacerNew : MonoBehaviour
 {
     [Tooltip("Use this Field For Normal Renderers")] 
-    [SerializeField] internal Renderer[] _renderers;
-    [SerializeField] internal ShaderType _shaderType;
+    [SerializeField] internal Renderer[] _renderers = null!;
+    [SerializeField] internal ShaderType _shaderType = ShaderType.Creature;
+    [SerializeField] internal bool DebugOutput = false;
     private void Awake()
     {
         if (IsHeadlessMode()) return;
@@ -55,6 +58,12 @@ public class ShaderReplacerNew : MonoBehaviour
             if(renderer == null) continue;
             foreach (var material in renderer.sharedMaterials)
             {
+                if (material == null)
+                {
+                    renderer.gameObject.SetActive(false);
+                    continue;
+                }
+                
                 material.shader = Shader.Find(ReturnEnumString(_shaderType));
             }
         }
